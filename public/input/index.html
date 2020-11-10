@@ -1,0 +1,45 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixar's Quizz</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div id="content">
+        <div id="movie-image"></div>
+        <p class="question-container" id="questions"></p>
+        <div id="answers" class="option-container"></div>
+    </div>
+    <div id="answers" class="option-container"></div>
+
+    <div class="answer-container">
+        <div id="imageResult"></div>
+        <p id="userName">
+        </p>
+        <p id="answer-total">
+        </p>
+        <p id="answer-right">
+        </p>
+        <p id="answer-wrong">
+        </p>
+    </div>
+
+    <div class="button-container">
+        <button class="button" id="get-question"><span id="start-button">Start the Quizz</span></button>
+    </div>
+    
+    <div id="nbrUsers">There is 1 user playing the game!</div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
